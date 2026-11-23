@@ -414,7 +414,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1918695177}
+      - m_Target: {fileID: 1999531706}
         m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
         m_MethodName: ExitGame
         m_Mode: 1
@@ -684,7 +684,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1918695177}
+      - m_Target: {fileID: 1999531706}
         m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
         m_MethodName: OpenExercise
         m_Mode: 1
@@ -1424,7 +1424,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914121421}
   m_CullTransparentMesh: 1
---- !u!1 &1918695176
+--- !u!1 &1999531705
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1432,8 +1432,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1918695178}
-  - component: {fileID: 1918695177}
+  - component: {fileID: 1999531707}
+  - component: {fileID: 1999531706}
   m_Layer: 0
   m_Name: MenuManager
   m_TagString: Untagged
@@ -1441,28 +1441,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1918695177
+--- !u!114 &1999531706
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1918695176}
+  m_GameObject: {fileID: 1999531705}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84f8003b250289c4688252e824357332, type: 3}
+  m_Script: {fileID: 11500000, guid: 04b2695ca9c0b6e4c9d25fb668abae09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenuController
---- !u!4 &1918695178
+--- !u!4 &1999531707
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1918695176}
+  m_GameObject: {fileID: 1999531705}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 439.38922, y: 193.5873, z: 0}
+  m_LocalPosition: {x: 980.8015, y: 517.4166, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1551,7 +1551,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1918695177}
+      - m_Target: {fileID: 1999531706}
         m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
         m_MethodName: OpenLearning
         m_Mode: 1
@@ -1684,7 +1684,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1918695177}
+      - m_Target: {fileID: 1999531706}
         m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
         m_MethodName: OpenGameplay
         m_Mode: 1
@@ -1740,5 +1740,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 960362611}
   - {fileID: 1768726817}
-  - {fileID: 1918695178}
   - {fileID: 1164285128}
+  - {fileID: 1999531707}
