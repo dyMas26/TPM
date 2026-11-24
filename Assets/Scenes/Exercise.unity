@@ -4866,6 +4866,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1372180012}
+  - component: {fileID: 1372180013}
   m_Layer: 0
   m_Name: ExerciseManager
   m_TagString: Untagged
@@ -4888,6 +4889,224 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1372180013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372180011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1a73201accabe45a6c2d8a62621c6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ExerciseController
+  discountQuestions:
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  profitLossQuestions:
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  - questionText: 
+    answerA: 
+    answerB: 
+    answerC: 
+    answerD: 
+    correctAnswerIndex: 0
+    explanationText: 
+    explanationImage: {fileID: 0}
+  exerciseMenuPanel: {fileID: 1058113892}
+  exercisePanel: {fileID: 1402002282}
+  resultPanel: {fileID: 54527086}
+  feedbackPanel: {fileID: 741932011}
+  discountExerciseButton: {fileID: 1993206859}
+  profitLossExerciseButton: {fileID: 313478374}
+  mainMenuButton: {fileID: 1609228837}
+  exerciseHeader: {fileID: 569845397}
+  questionNumberText: {fileID: 1697261708}
+  progressText: {fileID: 1524390033}
+  questionText: {fileID: 1932539053}
+  answerButtons:
+  - {fileID: 1636086713}
+  - {fileID: 2109378535}
+  - {fileID: 178310752}
+  - {fileID: 1630266539}
+  nextButton: {fileID: 321655428}
+  exerciseBackButton: {fileID: 1523301275}
+  scoreText: {fileID: 1357920622}
+  correctAnswerText: {fileID: 785016422}
+  wrongAnswerText: {fileID: 546549713}
+  feedbackButton: {fileID: 179078212}
+  exerciseMenuButton: {fileID: 440570549}
+  feedbackContentTexts:
+  - {fileID: 26024553}
+  - {fileID: 1861227268}
+  - {fileID: 1714429702}
+  - {fileID: 619570427}
+  - {fileID: 702988862}
+  explanationImages:
+  - {fileID: 719695016}
+  - {fileID: 1066220352}
+  - {fileID: 1656120160}
+  - {fileID: 135365248}
+  - {fileID: 1097705396}
+  backToResultButton: {fileID: 998839934}
+  normalYellow: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  highlightedYellow: {r: 1, g: 0.9647059, b: 0.47058824, a: 1}
+  pressedYellow: {r: 0.74509805, g: 0.6666667, b: 0, a: 1}
+  selectedYellow: {r: 0.88235295, g: 0.8039216, b: 0, a: 1}
+  normalGreen: {r: 0, g: 1, b: 0, a: 1}
+  highlightedGreen: {r: 0.4509804, g: 1, b: 0.4509804, a: 1}
+  pressedGreen: {r: 0, g: 0.64705884, b: 0, a: 1}
+  selectedGreen: {r: 0, g: 0.8235294, b: 0, a: 1}
 --- !u!1 &1402002282
 GameObject:
   m_ObjectHideFlags: 0
