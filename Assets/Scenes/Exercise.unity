@@ -4904,34 +4904,34 @@ MonoBehaviour:
   discountQuestions:
   - questionText: Sebuah baju memiliki harga Rp100.000 dan mendapatkan diskon 20%. Berapakah besar potongan harganya?
     answerA: Rp10.000
-    answerB: Rp20.000
-    answerC: Rp30.000
-    answerD: Rp40.000
-    correctAnswerIndex: 1
+    answerB: Rp15.000
+    answerC: Rp20.000
+    answerD: Rp25.000
+    correctAnswerIndex: 2
     explanationText: "Pembahasan: 20% \xD7 Rp100.000 = Rp20.000."
     explanationImage: {fileID: 0}
   - questionText: Sebuah celana seharga Rp150.000 mendapatkan diskon 10%. Berapakah harga setelah diskon?
-    answerA: Rp125.000
-    answerB: Rp130.000
-    answerC: Rp135.000
-    answerD: Rp140.000
-    correctAnswerIndex: 2
+    answerA: Rp130.000
+    answerB: Rp135.000
+    answerC: Rp140.000
+    answerD: Rp145.000
+    correctAnswerIndex: 1
     explanationText: "Pembahasan: Diskon = 10% \xD7 Rp150.000 = Rp15.000. Harga akhir = Rp150.000 \u2212 Rp15.000 = Rp135.000."
     explanationImage: {fileID: 0}
   - questionText: Sebuah tas seharga Rp200.000 mendapatkan potongan harga sebesar Rp40.000. Berapakah persentase diskonnya?
-    answerA: 10%
-    answerB: 15%
-    answerC: 20%
-    answerD: 25%
-    correctAnswerIndex: 2
+    answerA: 15%
+    answerB: 20%
+    answerC: 25%
+    answerD: 30%
+    correctAnswerIndex: 1
     explanationText: "Pembahasan: (Rp40.000 \xF7 Rp200.000) \xD7 100% = 20%."
     explanationImage: {fileID: 0}
   - questionText: Sebuah sepatu seharga Rp250.000 mendapatkan diskon 20%. Berapakah harga yang harus dibayar?
-    answerA: Rp180.000
-    answerB: Rp190.000
-    answerC: Rp200.000
-    answerD: Rp210.000
-    correctAnswerIndex: 2
+    answerA: Rp170.000
+    answerB: Rp180.000
+    answerC: Rp190.000
+    answerD: Rp200.000
+    correctAnswerIndex: 3
     explanationText: "Pembahasan: Diskon = 20% \xD7 Rp250.000 = Rp50.000. Harga akhir = Rp250.000 \u2212 Rp50.000 = Rp200.000."
     explanationImage: {fileID: 0}
   - questionText: Sebuah jaket seharga Rp300.000 mendapatkan diskon 15%. Berapakah besar potongan harganya?
@@ -4943,52 +4943,52 @@ MonoBehaviour:
     explanationText: "Pembahasan: 15% \xD7 Rp300.000 = Rp45.000."
     explanationImage: {fileID: 0}
   - questionText: Sebuah buku seharga Rp80.000 mendapatkan diskon 25%. Berapakah harga setelah diskon?
-    answerA: Rp50.000
-    answerB: Rp55.000
-    answerC: Rp60.000
-    answerD: Rp65.000
-    correctAnswerIndex: 2
+    answerA: Rp55.000
+    answerB: Rp60.000
+    answerC: Rp65.000
+    answerD: Rp70.000
+    correctAnswerIndex: 1
     explanationText: "Pembahasan: Diskon = 25% \xD7 Rp80.000 = Rp20.000. Harga akhir = Rp60.000."
     explanationImage: {fileID: 0}
   - questionText: Sebuah jam tangan memiliki harga Rp400.000. Setelah diskon, harganya menjadi Rp320.000. Berapakah persentase diskonnya?
-    answerA: 10%
-    answerB: 15%
-    answerC: 20%
-    answerD: 25%
-    correctAnswerIndex: 2
+    answerA: 20%
+    answerB: 25%
+    answerC: 30%
+    answerD: 35%
+    correctAnswerIndex: 0
     explanationText: "Pembahasan: Diskon = Rp400.000 \u2212 Rp320.000 = Rp80.000. Persentase diskon = (Rp80.000 \xF7 Rp400.000) \xD7 100% = 20%."
     explanationImage: {fileID: 0}
   - questionText: Sebuah topi seharga Rp60.000 mendapatkan diskon 30%. Berapakah harga setelah diskon?
     answerA: Rp36.000
-    answerB: Rp40.000
+    answerB: Rp39.000
     answerC: Rp42.000
-    answerD: Rp48.000
+    answerD: Rp45.000
     correctAnswerIndex: 2
     explanationText: "Pembahasan: Diskon = 30% \xD7 Rp60.000 = Rp18.000. Harga akhir = Rp42.000."
     explanationImage: {fileID: 0}
   - questionText: Sebuah kemeja seharga Rp120.000 mendapatkan diskon 5%. Berapakah besar potongan harganya?
-    answerA: Rp4.000
-    answerB: Rp5.000
-    answerC: Rp6.000
-    answerD: Rp8.000
-    correctAnswerIndex: 2
+    answerA: Rp3.000
+    answerB: Rp4.000
+    answerC: Rp5.000
+    answerD: Rp6.000
+    correctAnswerIndex: 3
     explanationText: "Pembahasan: 5% \xD7 Rp120.000 = Rp6.000."
     explanationImage: {fileID: 0}
   - questionText: Sebuah barang dijual dengan harga Rp180.000 setelah mendapatkan diskon 10%. Berapakah harga awal barang tersebut?
-    answerA: Rp200.000
-    answerB: Rp210.000
-    answerC: Rp220.000
-    answerD: Rp230.000
-    correctAnswerIndex: 0
+    answerA: Rp190.000
+    answerB: Rp200.000
+    answerC: Rp210.000
+    answerD: Rp220.000
+    correctAnswerIndex: 1
     explanationText: "Pembahasan: Harga setelah diskon = 90% dari harga awal. Harga awal = Rp180.000 \xF7 90% = Rp200.000."
     explanationImage: {fileID: 0}
   profitLossQuestions:
   - questionText: Seorang pedagang membeli tas seharga Rp100.000 dan menjualnya seharga Rp130.000. Berapakah keuntungan yang diperoleh?
-    answerA: Rp20.000
-    answerB: Rp25.000
-    answerC: Rp30.000
-    answerD: Rp35.000
-    correctAnswerIndex: 2
+    answerA: Rp30.000
+    answerB: Rp35.000
+    answerC: Rp40.000
+    answerD: Rp45.000
+    correctAnswerIndex: 0
     explanationText: "Pembahasan: Keuntungan = Harga jual \u2212 Harga beli = Rp130.000 \u2212 Rp100.000 = Rp30.000."
     explanationImage: {fileID: 0}
   - questionText: Seorang pedagang membeli sepatu seharga Rp200.000 dan menjualnya seharga Rp180.000. Berapakah kerugiannya?
@@ -5000,24 +5000,24 @@ MonoBehaviour:
     explanationText: "Pembahasan: Kerugian = Harga beli \u2212 Harga jual = Rp200.000 \u2212 Rp180.000 = Rp20.000."
     explanationImage: {fileID: 0}
   - questionText: Seorang pedagang membeli barang seharga Rp150.000 dan menjualnya seharga Rp180.000. Berapakah persentase keuntungannya?
-    answerA: 10%
-    answerB: 15%
-    answerC: 20%
-    answerD: 25%
-    correctAnswerIndex: 2
+    answerA: 15%
+    answerB: 20%
+    answerC: 25%
+    answerD: 30%
+    correctAnswerIndex: 1
     explanationText: "Pembahasan: Keuntungan = Rp30.000. Persentase keuntungan = (Rp30.000 \xF7 Rp150.000) \xD7 100% = 20%."
     explanationImage: {fileID: 0}
   - questionText: Sebuah barang dibeli dengan harga Rp250.000 dan mengalami kerugian sebesar Rp50.000. Berapakah harga jualnya?
-    answerA: Rp180.000
-    answerB: Rp190.000
-    answerC: Rp200.000
-    answerD: Rp210.000
-    correctAnswerIndex: 2
+    answerA: Rp170.000
+    answerB: Rp180.000
+    answerC: Rp190.000
+    answerD: Rp200.000
+    correctAnswerIndex: 3
     explanationText: "Pembahasan: Harga jual = Harga beli \u2212 Kerugian = Rp250.000 \u2212 Rp50.000 = Rp200.000."
     explanationImage: {fileID: 0}
   - questionText: Seorang pedagang membeli baju seharga Rp80.000 dan menginginkan keuntungan Rp20.000. Berapakah harga jual yang harus ditetapkan?
-    answerA: Rp90.000
-    answerB: Rp95.000
+    answerA: Rp80.000
+    answerB: Rp90.000
     answerC: Rp100.000
     answerD: Rp110.000
     correctAnswerIndex: 2
@@ -5032,11 +5032,11 @@ MonoBehaviour:
     explanationText: "Pembahasan: Kerugian = Rp40.000. Persentase kerugian = (Rp40.000 \xF7 Rp400.000) \xD7 100% = 10%."
     explanationImage: {fileID: 0}
   - questionText: Sebuah barang dijual seharga Rp240.000 dengan keuntungan 20%. Berapakah harga belinya?
-    answerA: Rp180.000
-    answerB: Rp190.000
-    answerC: Rp200.000
-    answerD: Rp220.000
-    correctAnswerIndex: 2
+    answerA: Rp200.000
+    answerB: Rp210.000
+    answerC: Rp220.000
+    answerD: Rp230.000
+    correctAnswerIndex: 0
     explanationText: "Pembahasan: Harga jual = 120% dari harga beli. Harga beli = Rp240.000 \xF7 120% = Rp200.000."
     explanationImage: {fileID: 0}
   - questionText: Seorang pedagang membeli sebuah meja seharga Rp500.000 dan menjualnya dengan kerugian 10%. Berapakah harga jual meja tersebut?
@@ -5048,11 +5048,11 @@ MonoBehaviour:
     explanationText: "Pembahasan: Kerugian = 10% \xD7 Rp500.000 = Rp50.000. Harga jual = Rp500.000 \u2212 Rp50.000 = Rp450.000."
     explanationImage: {fileID: 0}
   - questionText: Seorang pedagang membeli barang seharga Rp120.000 dan menjualnya dengan keuntungan Rp30.000. Berapakah persentase keuntungannya?
-    answerA: 15%
-    answerB: 20%
-    answerC: 25%
-    answerD: 30%
-    correctAnswerIndex: 2
+    answerA: 20%
+    answerB: 25%
+    answerC: 30%
+    answerD: 35%
+    correctAnswerIndex: 1
     explanationText: "Pembahasan: Persentase keuntungan = (Rp30.000 \xF7 Rp120.000) \xD7 100% = 25%."
     explanationImage: {fileID: 0}
   - questionText: Seorang pedagang membeli sebuah barang seharga Rp300.000. Jika barang tersebut dijual dengan kerugian 20%, berapakah harga jualnya?
