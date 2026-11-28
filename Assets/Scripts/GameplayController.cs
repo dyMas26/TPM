@@ -46,7 +46,10 @@ public class GameplayController : MonoBehaviour
     public TMP_Text customerDialogueText;
     public TMP_Text itemListText;
     public TMP_Text attemptText;
-    public TMP_Text feedbackText;
+
+    [Header("CUSTOMER CHARACTER")]
+    public Image customerImage;
+    public Sprite[] customerSprites;
 
     [Header("CASHIER INPUT")]
     public TMP_InputField totalInputField;
@@ -68,12 +71,18 @@ public class GameplayController : MonoBehaviour
     public Button submitEvaluationButton;
     public Button continueGameButton;
     public Button evaluationMainMenuButton;
+    public Button backToReportButton;
 
-    private readonly CultureInfo idCulture = new CultureInfo("id-ID");
+    private readonly CultureInfo idCulture =
+        new CultureInfo("id-ID");
 
     private StoreItem[] itemCatalog;
-    private readonly List<SaleRecord> allSales = new List<SaleRecord>();
-    private readonly List<SaleRecord> currentPurchase = new List<SaleRecord>();
+
+    private readonly List<SaleRecord> allSales =
+        new List<SaleRecord>();
+
+    private readonly List<SaleRecord> currentPurchase =
+        new List<SaleRecord>();
 
     private int currentDay = 1;
     private int currentCustomer = 1;
@@ -83,6 +92,8 @@ public class GameplayController : MonoBehaviour
 
     private int totalModal = 0;
     private int totalRevenue = 0;
+
+    private bool evaluationPreparedForDay = false;
 
     private void Start()
     {
@@ -124,6 +135,8 @@ public class GameplayController : MonoBehaviour
         submitEvaluationButton.onClick.AddListener(CheckEvaluation);
         continueGameButton.onClick.AddListener(ContinueGame);
         evaluationMainMenuButton.onClick.AddListener(OpenMainMenu);
+
+        backToReportButton.onClick.AddListener(BackToReport);
     }
 
     private void StartNewDay()
@@ -131,12 +144,20 @@ public class GameplayController : MonoBehaviour
         allSales.Clear();
 
         currentCustomer = 1;
+        totalModal = 0;
+        totalRevenue = 0;
+
+        evaluationPreparedForDay = false;
 
         gameplayPanel.SetActive(true);
+        cashierScreenPanel.SetActive(false);
         reportPanel.SetActive(false);
         evaluationPanel.SetActive(false);
 
         mainMenuButton.gameObject.SetActive(false);
+
+        continueGameButton.gameObject.SetActive(false);
+        evaluationMainMenuButton.gameObject.SetActive(false);
 
         dayText.text = "HARI KE-" + currentDay;
 
@@ -154,10 +175,25 @@ public class GameplayController : MonoBehaviour
             "PELANGGAN " + currentCustomer + " / 5";
 
         totalInputField.text = "";
-        feedbackText.text = "";
+        totalInputField.interactable = true;
 
-        attemptsUsed = 0;
+        submitButton.interactable = true;
+
+        mainMenuButton.gameObject.SetActive(false);
+
         attemptText.text = "Kesempatan tersisa: 3";
+
+        if (customerSprites != null &&
+            customerSprites.Length > 0)
+        {
+            int randomCharacter =
+                UnityEngine.Random.Range(
+                    0, customerSprites.Length
+                );
+
+            customerImage.sprite =
+                customerSprites[randomCharacter];
+        }
 
         GenerateCustomerPurchase();
 
@@ -178,16 +214,21 @@ public class GameplayController : MonoBehaviour
         for (int i = 0; i < itemCount; i++)
         {
             int randomIndex =
-                UnityEngine.Random.Range(0, availableItems.Count);
+                UnityEngine.Random.Range(
+                    0, availableItems.Count
+                );
 
-            StoreItem chosenItem = availableItems[randomIndex];
+            StoreItem chosenItem =
+                availableItems[randomIndex];
 
             availableItems.RemoveAt(randomIndex);
 
-            int discount = UnityEngine.Random.Range(0, 11) * 5;
+            int discount =
+                UnityEngine.Random.Range(0, 11) * 5;
 
             int finalPrice =
-                chosenItem.sellingPrice * (100 - discount) / 100;
+                chosenItem.sellingPrice *
+                (100 - discount) / 100;
 
             SaleRecord record = new SaleRecord();
 
@@ -205,16 +246,21 @@ public class GameplayController : MonoBehaviour
 
     private IEnumerator ShowCustomerDialogue()
     {
+        customerDialogueText.text =
+            "Selamat pagi! Saya ingin membeli beberapa barang.";
+
+        yield return new WaitForSeconds(2f);
+
         string dialogue = "Saya ingin membeli:\n";
 
         foreach (SaleRecord item in currentPurchase)
         {
-            dialogue += item.itemName + "\n";
+            dialogue += "- " + item.itemName + "\n";
         }
 
         customerDialogueText.text = dialogue;
 
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(2f);
 
         string itemText = "";
 
@@ -222,16 +268,19 @@ public class GameplayController : MonoBehaviour
         {
             SaleRecord item = currentPurchase[i];
 
+            int itemIndex = Array.FindIndex(
+                itemCatalog,
+                x => x.itemName == item.itemName
+            );
+
+            int originalPrice =
+                itemCatalog[itemIndex].sellingPrice;
+
             itemText +=
                 (i + 1) + ". " + item.itemName + "\n" +
-                "   Harga normal: " + FormatRupiah(
-                    itemCatalog[Array.FindIndex(
-                        itemCatalog,
-                        x => x.itemName == item.itemName
-                    )].sellingPrice) + "\n" +
-                "   Diskon: " + item.discount + "%\n" +
-                "   Harga setelah diskon: " +
-                FormatRupiah(item.sellingPrice) + "\n\n";
+                "   Harga normal: " +
+                FormatRupiah(originalPrice) + "\n" +
+                "   Diskon: " + item.discount + "%\n\n";
         }
 
         itemListText.text = itemText;
@@ -247,18 +296,20 @@ public class GameplayController : MonoBehaviour
             CultureInfo.InvariantCulture,
             out int playerAnswer))
         {
-            feedbackText.text =
-                "Masukkan nominal berupa angka saja.";
+            customerDialogueText.text =
+                "Masukkan nominal pembayaran berupa angka saja.";
             return;
         }
 
         if (playerAnswer == currentCustomerTotal)
         {
-            feedbackText.text = "Pembayaran benar!";
+            customerDialogueText.text =
+                "Terima kasih! Pembayaran sudah benar.";
 
             allSales.AddRange(currentPurchase);
 
             submitButton.interactable = false;
+            totalInputField.interactable = false;
 
             StartCoroutine(NextCustomer());
         }
@@ -268,21 +319,22 @@ public class GameplayController : MonoBehaviour
 
             int remaining = 3 - attemptsUsed;
 
+            attemptText.text =
+                "Kesempatan tersisa: " + remaining;
+
             if (remaining > 0)
             {
-                attemptText.text =
-                    "Kesempatan tersisa: " + remaining;
-
-                feedbackText.text =
-                    "Jumlah pembayaran belum tepat. Coba lagi!";
+                customerDialogueText.text =
+                    "Jumlah pembayaran belum tepat. Silakan coba lagi.";
             }
             else
             {
-                cashierScreenPanel.SetActive(false);
-
                 customerDialogueText.text =
-                    "Sepertinya kamu belum siap untuk bermain, " +
-                    "silahkan belajar terlebih dahulu.";
+                    "Sepertinya kamu belum siap untuk bermain. " +
+                    "Silakan belajar terlebih dahulu.";
+
+                submitButton.interactable = false;
+                totalInputField.interactable = false;
 
                 mainMenuButton.gameObject.SetActive(true);
             }
@@ -292,8 +344,6 @@ public class GameplayController : MonoBehaviour
     private IEnumerator NextCustomer()
     {
         yield return new WaitForSeconds(1.5f);
-
-        submitButton.interactable = true;
 
         if (currentCustomer < 5)
         {
@@ -309,6 +359,7 @@ public class GameplayController : MonoBehaviour
     private void ShowReport()
     {
         gameplayPanel.SetActive(false);
+        evaluationPanel.SetActive(false);
         reportPanel.SetActive(true);
 
         totalModal = 0;
@@ -326,9 +377,12 @@ public class GameplayController : MonoBehaviour
                 {
                     report +=
                         item.itemName +
-                        " | Modal: " + FormatRupiah(item.costPrice) +
-                        " | Terjual: " + FormatRupiah(item.sellingPrice) +
-                        " | Diskon: " + item.discount + "%\n";
+                        " | Modal: " +
+                        FormatRupiah(item.costPrice) +
+                        " | Terjual: " +
+                        FormatRupiah(item.sellingPrice) +
+                        " | Diskon: " +
+                        item.discount + "%\n";
 
                     totalModal += item.costPrice;
                     totalRevenue += item.sellingPrice;
@@ -343,6 +397,8 @@ public class GameplayController : MonoBehaviour
 
         totalRevenueText.text =
             "TOTAL PENJUALAN: " + FormatRupiah(totalRevenue);
+
+        reportContinueButton.interactable = true;
     }
 
     private void OpenEvaluation()
@@ -350,18 +406,34 @@ public class GameplayController : MonoBehaviour
         reportPanel.SetActive(false);
         evaluationPanel.SetActive(true);
 
-        selectedResult = 99;
+        // Persiapkan evaluasi hanya saat pertama kali dibuka.
+        // Jika pemain kembali ke laporan, jawaban tidak dihapus.
+        if (!evaluationPreparedForDay)
+        {
+            selectedResult = 99;
 
-        amountInputField.text = "";
-        evaluationFeedbackText.text = "";
+            amountInputField.text = "";
+            amountInputField.interactable = true;
 
-        continueGameButton.gameObject.SetActive(false);
-        evaluationMainMenuButton.gameObject.SetActive(false);
+            evaluationFeedbackText.text = "";
 
-        profitButton.interactable = true;
-        lossButton.interactable = true;
-        breakEvenButton.interactable = true;
-        submitEvaluationButton.interactable = true;
+            continueGameButton.gameObject.SetActive(false);
+            evaluationMainMenuButton.gameObject.SetActive(false);
+
+            profitButton.interactable = true;
+            lossButton.interactable = true;
+            breakEvenButton.interactable = true;
+
+            submitEvaluationButton.interactable = true;
+
+            evaluationPreparedForDay = true;
+        }
+    }
+
+    private void BackToReport()
+    {
+        evaluationPanel.SetActive(false);
+        reportPanel.SetActive(true);
     }
 
     private void SelectResult(int result)
@@ -429,7 +501,9 @@ public class GameplayController : MonoBehaviour
         profitButton.interactable = false;
         lossButton.interactable = false;
         breakEvenButton.interactable = false;
+
         submitEvaluationButton.interactable = false;
+        amountInputField.interactable = false;
 
         continueGameButton.gameObject.SetActive(true);
         evaluationMainMenuButton.gameObject.SetActive(true);
