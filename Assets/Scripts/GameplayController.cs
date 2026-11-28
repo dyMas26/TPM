@@ -288,6 +288,7 @@ public class GameplayController : MonoBehaviour
         cashierScreenPanel.SetActive(true);
     }
 
+    // MEMERIKSA JAWABAN PEMBAYARAN PELANGGAN
     private void CheckPayment()
     {
         if (!int.TryParse(
@@ -303,6 +304,10 @@ public class GameplayController : MonoBehaviour
 
         if (playerAnswer == currentCustomerTotal)
         {
+            // SUARA JAWABAN BENAR
+            if (SFXManager.Instance != null)
+                SFXManager.Instance.PlayCorrectAnswer();
+
             customerDialogueText.text =
                 "Terima kasih! Pembayaran sudah benar.";
 
@@ -315,6 +320,10 @@ public class GameplayController : MonoBehaviour
         }
         else
         {
+            // SUARA JAWABAN SALAH
+            if (SFXManager.Instance != null)
+                SFXManager.Instance.PlayWrongAnswer();
+
             attemptsUsed++;
 
             int remaining = 3 - attemptsUsed;
@@ -445,6 +454,7 @@ public class GameplayController : MonoBehaviour
         breakEvenButton.interactable = result != 0;
     }
 
+    // MEMERIKSA JAWABAN EVALUASI UNTUNG, RUGI, ATAU IMPAS
     private void CheckEvaluation()
     {
         if (selectedResult == 99)
@@ -484,6 +494,15 @@ public class GameplayController : MonoBehaviour
         bool isCorrect =
             selectedResult == correctResult &&
             playerAmount == correctAmount;
+
+        // SUARA JAWABAN BENAR ATAU SALAH
+        if (SFXManager.Instance != null)
+        {
+            if (isCorrect)
+                SFXManager.Instance.PlayCorrectAnswer();
+            else
+                SFXManager.Instance.PlayWrongAnswer();
+        }
 
         string explanation =
             "Total penjualan: " + FormatRupiah(totalRevenue) +

@@ -356,6 +356,7 @@ GameObject:
   - component: {fileID: 49224124}
   - component: {fileID: 49224123}
   - component: {fileID: 49224126}
+  - component: {fileID: 49224127}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -492,6 +493,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &49224127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49224121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &56323696
 GameObject:
   m_ObjectHideFlags: 0
@@ -1944,6 +1957,7 @@ GameObject:
   - component: {fileID: 289113518}
   - component: {fileID: 289113517}
   - component: {fileID: 289113520}
+  - component: {fileID: 289113521}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -2080,6 +2094,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &289113521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289113515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &316883614
 GameObject:
   m_ObjectHideFlags: 0
@@ -2743,6 +2769,7 @@ GameObject:
   - component: {fileID: 403646664}
   - component: {fileID: 403646663}
   - component: {fileID: 403646666}
+  - component: {fileID: 403646667}
   m_Layer: 5
   m_Name: PreviousButton
   m_TagString: Untagged
@@ -2879,6 +2906,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &403646667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403646661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &414691460
 GameObject:
   m_ObjectHideFlags: 0
@@ -2967,6 +3006,7 @@ GameObject:
   - component: {fileID: 415760674}
   - component: {fileID: 415760673}
   - component: {fileID: 415760676}
+  - component: {fileID: 415760677}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -3103,6 +3143,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &415760677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415760671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &442759513
 GameObject:
   m_ObjectHideFlags: 0
@@ -4592,6 +4644,7 @@ GameObject:
   - component: {fileID: 508842094}
   - component: {fileID: 508842093}
   - component: {fileID: 508842096}
+  - component: {fileID: 508842097}
   m_Layer: 5
   m_Name: PreviousButton
   m_TagString: Untagged
@@ -4728,6 +4781,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &508842097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508842091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &519894915
 GameObject:
   m_ObjectHideFlags: 0
@@ -5675,6 +5740,7 @@ RectTransform:
   - {fileID: 10068857}
   - {fileID: 746020278}
   - {fileID: 172874653}
+  - {fileID: 1634552503}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6018,6 +6084,7 @@ GameObject:
   - component: {fileID: 749700422}
   - component: {fileID: 749700421}
   - component: {fileID: 749700424}
+  - component: {fileID: 749700425}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -6154,6 +6221,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &749700425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749700419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &752507145
 GameObject:
   m_ObjectHideFlags: 0
@@ -6379,6 +6458,7 @@ GameObject:
   - component: {fileID: 792476234}
   - component: {fileID: 792476233}
   - component: {fileID: 792476236}
+  - component: {fileID: 792476237}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -6515,6 +6595,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &792476237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792476231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &805886786
 GameObject:
   m_ObjectHideFlags: 0
@@ -6528,6 +6620,7 @@ GameObject:
   - component: {fileID: 805886789}
   - component: {fileID: 805886788}
   - component: {fileID: 805886791}
+  - component: {fileID: 805886792}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -6664,6 +6757,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &805886792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805886786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &817406590
 GameObject:
   m_ObjectHideFlags: 0
@@ -6814,6 +6919,7 @@ GameObject:
   - component: {fileID: 818449323}
   - component: {fileID: 818449322}
   - component: {fileID: 818449325}
+  - component: {fileID: 818449326}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -6950,6 +7056,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &818449326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818449320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &821394397
 GameObject:
   m_ObjectHideFlags: 0
@@ -6963,6 +7081,7 @@ GameObject:
   - component: {fileID: 821394400}
   - component: {fileID: 821394399}
   - component: {fileID: 821394402}
+  - component: {fileID: 821394403}
   m_Layer: 5
   m_Name: PreviousButton
   m_TagString: Untagged
@@ -7099,6 +7218,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &821394403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821394397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &853644182
 GameObject:
   m_ObjectHideFlags: 0
@@ -7112,6 +7243,7 @@ GameObject:
   - component: {fileID: 853644185}
   - component: {fileID: 853644184}
   - component: {fileID: 853644187}
+  - component: {fileID: 853644188}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -7248,6 +7380,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &853644188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853644182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &856151181
 GameObject:
   m_ObjectHideFlags: 0
@@ -7946,6 +8090,7 @@ GameObject:
   - component: {fileID: 892248695}
   - component: {fileID: 892248694}
   - component: {fileID: 892248697}
+  - component: {fileID: 892248698}
   m_Layer: 5
   m_Name: PreviousButton
   m_TagString: Untagged
@@ -8082,6 +8227,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &892248698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892248692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &898636814
 GameObject:
   m_ObjectHideFlags: 0
@@ -8802,6 +8959,7 @@ GameObject:
   - component: {fileID: 925838619}
   - component: {fileID: 925838618}
   - component: {fileID: 925838621}
+  - component: {fileID: 925838622}
   m_Layer: 5
   m_Name: PreviousButton
   m_TagString: Untagged
@@ -8938,6 +9096,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &925838622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925838616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &964227169
 GameObject:
   m_ObjectHideFlags: 0
@@ -8951,6 +9121,7 @@ GameObject:
   - component: {fileID: 964227172}
   - component: {fileID: 964227171}
   - component: {fileID: 964227174}
+  - component: {fileID: 964227175}
   m_Layer: 5
   m_Name: PreviousButton
   m_TagString: Untagged
@@ -9087,6 +9258,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &964227175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964227169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &971582916
 GameObject:
   m_ObjectHideFlags: 0
@@ -9808,6 +9991,7 @@ GameObject:
   - component: {fileID: 1058708831}
   - component: {fileID: 1058708830}
   - component: {fileID: 1058708833}
+  - component: {fileID: 1058708834}
   m_Layer: 5
   m_Name: MainMenuButton
   m_TagString: Untagged
@@ -9944,6 +10128,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &1058708834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058708828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &1059758763
 GameObject:
   m_ObjectHideFlags: 0
@@ -10443,6 +10639,7 @@ GameObject:
   - component: {fileID: 1143691378}
   - component: {fileID: 1143691377}
   - component: {fileID: 1143691380}
+  - component: {fileID: 1143691381}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -10579,6 +10776,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &1143691381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143691375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &1163716866
 GameObject:
   m_ObjectHideFlags: 0
@@ -12673,6 +12882,7 @@ GameObject:
   - component: {fileID: 1380008791}
   - component: {fileID: 1380008790}
   - component: {fileID: 1380008793}
+  - component: {fileID: 1380008794}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -12809,6 +13019,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &1380008794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380008788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &1384395929
 GameObject:
   m_ObjectHideFlags: 0
@@ -12822,6 +13044,7 @@ GameObject:
   - component: {fileID: 1384395932}
   - component: {fileID: 1384395931}
   - component: {fileID: 1384395934}
+  - component: {fileID: 1384395935}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -12958,6 +13181,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &1384395935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384395929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &1394322195
 GameObject:
   m_ObjectHideFlags: 0
@@ -13108,6 +13343,7 @@ GameObject:
   - component: {fileID: 1403359852}
   - component: {fileID: 1403359851}
   - component: {fileID: 1403359854}
+  - component: {fileID: 1403359855}
   m_Layer: 5
   m_Name: PreviousButton
   m_TagString: Untagged
@@ -13244,6 +13480,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &1403359855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403359849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &1404417648
 GameObject:
   m_ObjectHideFlags: 0
@@ -13257,6 +13505,7 @@ GameObject:
   - component: {fileID: 1404417651}
   - component: {fileID: 1404417650}
   - component: {fileID: 1404417653}
+  - component: {fileID: 1404417654}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -13393,6 +13642,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &1404417654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404417648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &1433756916
 GameObject:
   m_ObjectHideFlags: 0
@@ -13406,6 +13667,7 @@ GameObject:
   - component: {fileID: 1433756919}
   - component: {fileID: 1433756918}
   - component: {fileID: 1433756921}
+  - component: {fileID: 1433756922}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -13542,6 +13804,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &1433756922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433756916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &1436774405
 GameObject:
   m_ObjectHideFlags: 0
@@ -15702,6 +15976,7 @@ GameObject:
   - component: {fileID: 1617537594}
   - component: {fileID: 1617537593}
   - component: {fileID: 1617537596}
+  - component: {fileID: 1617537597}
   m_Layer: 5
   m_Name: DiscountButton
   m_TagString: Untagged
@@ -15838,6 +16113,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &1617537597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617537591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &1619315669
 GameObject:
   m_ObjectHideFlags: 0
@@ -15974,6 +16261,126 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1619315669}
+  m_CullTransparentMesh: 1
+--- !u!1 &1634552502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1634552503}
+  - component: {fileID: 1634552506}
+  - component: {fileID: 1634552505}
+  - component: {fileID: 1634552504}
+  m_Layer: 5
+  m_Name: MusicButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1634552503
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634552502}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 634124248}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 825, y: 400}
+  m_SizeDelta: {x: 120, y: 120}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1634552504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634552502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1634552505}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1634552505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634552502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: dffab8a6aae2ee74287e498225d1fcff, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1634552506
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634552502}
   m_CullTransparentMesh: 1
 --- !u!1 &1653094894
 GameObject:
@@ -16125,6 +16532,7 @@ GameObject:
   - component: {fileID: 1659728755}
   - component: {fileID: 1659728754}
   - component: {fileID: 1659728757}
+  - component: {fileID: 1659728758}
   m_Layer: 5
   m_Name: PreviousButton
   m_TagString: Untagged
@@ -16261,6 +16669,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &1659728758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659728752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &1660516459
 GameObject:
   m_ObjectHideFlags: 0
@@ -16274,6 +16694,7 @@ GameObject:
   - component: {fileID: 1660516462}
   - component: {fileID: 1660516461}
   - component: {fileID: 1660516464}
+  - component: {fileID: 1660516465}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -16410,6 +16831,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &1660516465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660516459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &1663197269
 GameObject:
   m_ObjectHideFlags: 0
@@ -16423,6 +16856,7 @@ GameObject:
   - component: {fileID: 1663197272}
   - component: {fileID: 1663197271}
   - component: {fileID: 1663197274}
+  - component: {fileID: 1663197275}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -16559,6 +16993,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &1663197275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663197269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &1666833345
 GameObject:
   m_ObjectHideFlags: 0
@@ -16709,6 +17155,7 @@ GameObject:
   - component: {fileID: 1674402931}
   - component: {fileID: 1674402930}
   - component: {fileID: 1674402933}
+  - component: {fileID: 1674402934}
   m_Layer: 5
   m_Name: ProfitLossButton
   m_TagString: Untagged
@@ -16845,6 +17292,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &1674402934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674402928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &1674456269
 GameObject:
   m_ObjectHideFlags: 0
@@ -17911,6 +18370,7 @@ GameObject:
   - component: {fileID: 1886903203}
   - component: {fileID: 1886903202}
   - component: {fileID: 1886903205}
+  - component: {fileID: 1886903206}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -18047,6 +18507,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &1886903206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886903200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &1897687055
 GameObject:
   m_ObjectHideFlags: 0
@@ -18820,6 +19292,7 @@ GameObject:
   - component: {fileID: 2045892527}
   - component: {fileID: 2045892526}
   - component: {fileID: 2045892529}
+  - component: {fileID: 2045892530}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -18956,6 +19429,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &2045892530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045892524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &2047938065
 GameObject:
   m_ObjectHideFlags: 0
@@ -19654,6 +20139,7 @@ GameObject:
   - component: {fileID: 2105974988}
   - component: {fileID: 2105974987}
   - component: {fileID: 2105974990}
+  - component: {fileID: 2105974991}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -19790,6 +20276,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!114 &2105974991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105974985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7365a17c983d740bcebf4258c47226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClickSFX
 --- !u!1 &2125751359
 GameObject:
   m_ObjectHideFlags: 0

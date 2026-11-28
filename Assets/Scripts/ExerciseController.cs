@@ -33,14 +33,11 @@ public class ExerciseController : MonoBehaviour
 {
     [Header("BANK SOAL DISKON")]
     [SerializeField]
-    private ExerciseQuestion[] discountQuestions =
-        new ExerciseQuestion[10];
+    private ExerciseQuestion[] discountQuestions = new ExerciseQuestion[10];
 
     [Header("BANK SOAL UNTUNG RUGI")]
     [SerializeField]
-    private ExerciseQuestion[] profitLossQuestions =
-        new ExerciseQuestion[10];
-
+    private ExerciseQuestion[] profitLossQuestions = new ExerciseQuestion[10];
 
     [Header("PANELS")]
     [SerializeField] private GameObject exerciseMenuPanel;
@@ -48,12 +45,10 @@ public class ExerciseController : MonoBehaviour
     [SerializeField] private GameObject resultPanel;
     [SerializeField] private GameObject feedbackPanel;
 
-
     [Header("MENU BUTTONS")]
     [SerializeField] private Button discountExerciseButton;
     [SerializeField] private Button profitLossExerciseButton;
     [SerializeField] private Button mainMenuButton;
-
 
     [Header("EXERCISE UI")]
     [SerializeField] private TMP_Text exerciseHeader;
@@ -61,12 +56,10 @@ public class ExerciseController : MonoBehaviour
     [SerializeField] private TMP_Text progressText;
     [SerializeField] private TMP_Text questionText;
 
-    [SerializeField] private Button[] answerButtons =
-        new Button[4];
+    [SerializeField] private Button[] answerButtons = new Button[4];
 
     [SerializeField] private Button nextButton;
     [SerializeField] private Button exerciseBackButton;
-
 
     [Header("RESULT UI")]
     [SerializeField] private TMP_Text scoreText;
@@ -76,16 +69,12 @@ public class ExerciseController : MonoBehaviour
     [SerializeField] private Button feedbackButton;
     [SerializeField] private Button exerciseMenuButton;
 
-
     [Header("FEEDBACK UI")]
-    [SerializeField] private TMP_Text[] feedbackContentTexts =
-        new TMP_Text[5];
+    [SerializeField] private TMP_Text[] feedbackContentTexts = new TMP_Text[5];
 
-    [SerializeField] private Image[] explanationImages =
-        new Image[5];
+    [SerializeField] private Image[] explanationImages = new Image[5];
 
     [SerializeField] private Button backToResultButton;
-
 
     [Header("NEXT BUTTON COLORS")]
     [SerializeField] private Color normalYellow;
@@ -97,7 +86,6 @@ public class ExerciseController : MonoBehaviour
     [SerializeField] private Color highlightedGreen;
     [SerializeField] private Color pressedGreen;
     [SerializeField] private Color selectedGreen;
-
 
     private List<ExerciseQuestion> selectedQuestions =
         new List<ExerciseQuestion>();
@@ -111,7 +99,6 @@ public class ExerciseController : MonoBehaviour
     private int finalScore;
 
     private bool isDiscountExercise;
-
 
     private void Awake()
     {
@@ -138,12 +125,10 @@ public class ExerciseController : MonoBehaviour
         SetNextButtonColors();
     }
 
-
     private void Start()
     {
         ShowExerciseMenu();
     }
-
 
     // =====================================
     // MENU LATIHAN
@@ -157,13 +142,11 @@ public class ExerciseController : MonoBehaviour
         feedbackPanel.SetActive(false);
     }
 
-
     public void StartDiscountExercise()
     {
         isDiscountExercise = true;
         StartExercise(discountQuestions);
     }
-
 
     public void StartProfitLossExercise()
     {
@@ -171,12 +154,10 @@ public class ExerciseController : MonoBehaviour
         StartExercise(profitLossQuestions);
     }
 
-
     public void OpenMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }
-
 
     // =====================================
     // MEMULAI LATIHAN
@@ -233,7 +214,6 @@ public class ExerciseController : MonoBehaviour
         DisplayQuestion();
     }
 
-
     private void ShuffleQuestions(List<ExerciseQuestion> questions)
     {
         for (int i = questions.Count - 1; i > 0; i--)
@@ -246,7 +226,6 @@ public class ExerciseController : MonoBehaviour
             questions[randomIndex] = temporary;
         }
     }
-
 
     // =====================================
     // MENAMPILKAN SOAL
@@ -296,7 +275,6 @@ public class ExerciseController : MonoBehaviour
         }
     }
 
-
     // =====================================
     // MEMILIH JAWABAN
     // =====================================
@@ -307,7 +285,6 @@ public class ExerciseController : MonoBehaviour
 
         nextButton.interactable = true;
     }
-
 
     // =====================================
     // TOMBOL SELANJUTNYA DAN KIRIM
@@ -323,6 +300,9 @@ public class ExerciseController : MonoBehaviour
         playerAnswers[currentQuestionIndex] =
             selectedAnswerIndex;
 
+        // Memutar suara setelah pemain menekan Selanjutnya atau Kirim.
+        PlayAnswerFeedbackSFX();
+
         if (currentQuestionIndex < 4)
         {
             currentQuestionIndex++;
@@ -336,6 +316,30 @@ public class ExerciseController : MonoBehaviour
         }
     }
 
+    // =====================================
+    // SOUND EFFECT JAWABAN
+    // =====================================
+
+    private void PlayAnswerFeedbackSFX()
+    {
+        if (SFXManager.Instance == null)
+        {
+            return;
+        }
+
+        bool isCorrect =
+            selectedAnswerIndex ==
+            selectedQuestions[currentQuestionIndex].correctAnswerIndex;
+
+        if (isCorrect)
+        {
+            SFXManager.Instance.PlayCorrectAnswer();
+        }
+        else
+        {
+            SFXManager.Instance.PlayWrongAnswer();
+        }
+    }
 
     // =====================================
     // MENGHITUNG NILAI
@@ -362,7 +366,6 @@ public class ExerciseController : MonoBehaviour
         finalScore = correctCount * 20;
     }
 
-
     // =====================================
     // MENAMPILKAN HASIL
     // =====================================
@@ -381,7 +384,6 @@ public class ExerciseController : MonoBehaviour
         wrongAnswerText.text =
             "Salah : " + wrongCount;
     }
-
 
     // =====================================
     // MENAMPILKAN PEMBAHASAN
@@ -422,7 +424,6 @@ public class ExerciseController : MonoBehaviour
         }
     }
 
-
     private string GetAnswerText(
         ExerciseQuestion question,
         int answerIndex)
@@ -446,7 +447,6 @@ public class ExerciseController : MonoBehaviour
         }
     }
 
-
     // =====================================
     // KEMBALI ANTARPANEL
     // =====================================
@@ -456,13 +456,11 @@ public class ExerciseController : MonoBehaviour
         ShowExerciseMenu();
     }
 
-
     private void BackToResult()
     {
         feedbackPanel.SetActive(false);
         resultPanel.SetActive(true);
     }
-
 
     // =====================================
     // WARNA NEXT BUTTON
